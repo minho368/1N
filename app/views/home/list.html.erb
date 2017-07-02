@@ -1,0 +1,17 @@
+<button type="text" class="btn btn-default" ><a href="/home/new">인연 등록하기</a></button>
+  <div class="container">
+    
+    <h1>지금까지 작성된 Post들입니다</h1>
+                <form>
+                    <% @posts.each do |post| %>
+                        <% if post.gender==2 
+                 	     @color = "#99c0ff" 
+                 	         else 
+                         @color = "hotpink" 
+                	     end %>
+                    <div style="background-color:<%= @color %>"><h3><a href="/home/show1/<%= post.id %>"> <%= post.id %> : <%= post.title %> </a></h3></div>
+                    <hr>
+                    <% end %>
+                </form>
+        </div>
+    </div>

@@ -1,0 +1,14 @@
+<button type="button" class="btn btn-default" >
+    <a href="/home/list">돌아가기</a></button>
+    
+        <div class = "jumbotron">
+                <h1><%= @post.title %> </h1>
+                이름 : <%= @post.name %> 나이 : <%= @post.age %> 성별 : <%= @post.gender %> 
+               
+                <hr>
+                 <p>내용 : <%= @post.content %></p>
+<form actions='' method='get'>
+        <input type="submit" value="관심 등록하기">
+</form>
+        </div>
+
